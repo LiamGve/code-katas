@@ -1,16 +1,17 @@
 # Assumption: All strings are in ASCII
 
-# O(n^2)
-# n + n-1 + n-2 + ... n-(n-1)
+
 def slowUniqueString(word):
+    """ O(n^2)
+    n + n-1 + n-2 + ... n-(n-1) """
     for i, c in enumerate(word):
         for j in word[i + 1:]:
             if c == j:
                 return False
     return True
 
-# O(n)
 def fastUniqueString(word):
+    """ O(n) """
     if len(word) > 128:
         return False
 
