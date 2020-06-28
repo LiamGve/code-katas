@@ -1,4 +1,5 @@
 .idea/
 .git/
 .DS_Store
+out/
 *.class
