@@ -74,3 +74,4 @@ print(compressFast('aaaabbbbccccddddeeeefgggijjjppp')) # a4b4c4d4e4f1g3i1j3p3
 print(compressFast('gg')) # gg
 print(compressFast('ggg')) # g3
 print(compressFast('abcd')) # abcd
+
